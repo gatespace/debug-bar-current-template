@@ -30,7 +30,6 @@
   Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301 USA
  */
 
-add_filter( 'debug_bar_panels', 'debug_bar_current_templete_panel' );
 if ( ! function_exists( 'debug_bar_current_templete_panel' ) ) {
     function debug_bar_current_templete_panel( $panels ) {
     	require_once( 'class-debug-bar-current-templete.php' );
@@ -38,3 +37,4 @@ if ( ! function_exists( 'debug_bar_current_templete_panel' ) ) {
         return $panels;
     }
 }
+add_filter( 'debug_bar_panels', 'debug_bar_current_templete_panel' );
