@@ -1,5 +1,4 @@
 <?php
-load_plugin_textdomain( Debug_Bar_Template_File_Name::TEXT_DOMAIN, false, dirname( plugin_basename( __FILE__ ) ) . '/languages/' );
 class Debug_Bar_Template_File_Name extends Debug_Bar_Panel {
 	const TEXT_DOMAIN = 'debug-bar-current-template';
 
@@ -56,3 +55,4 @@ class Debug_Bar_Template_File_Name extends Debug_Bar_Panel {
 	}
 
 }
+load_plugin_textdomain( Debug_Bar_Template_File_Name::TEXT_DOMAIN, false, dirname( plugin_basename( __FILE__ ) ) . '/languages/' );
